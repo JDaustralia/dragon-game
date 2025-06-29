@@ -1,0 +1,3 @@
+[project]
+entrypoint = "main.py"
+app_name = "DragonGame"

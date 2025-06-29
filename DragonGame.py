@@ -351,19 +351,20 @@ def run_challenge(dna_red, dna_blue):
         "rounds_played": round_num - 1
     }
 
-
-
-
-if __name__ == "__main__":
+def run_game():
     # Hardcoded Red Champion
     dna_red = DragonDNA(
-        lookahead_depth=1,   # 2,
-        enemy_seek=0.38778546510067036,  # 0.3657536328725792,
-        wall_avoidance=0.43758348977319944,  #0.5572876540257387,
-        directional_stability=0.43375173021459623  #0.3500046144678396
+        lookahead_depth=1,
+        enemy_seek=0.38778546510067036,
+        wall_avoidance=0.43758348977319944,
+        directional_stability=0.43375173021459623
     )
 
     # Player designs Blue Dragon
     dna_blue = opening_screen()
 
     run_challenge(dna_red, dna_blue)
+
+if __name__ == "__main__":
+    run_game()
+
